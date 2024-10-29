@@ -1,0 +1,34 @@
+<style> /*estilos para el elemento <main>*/
+
+main {
+    background: #d9d7d5; /* color de fondo del contenedor principal */
+    display: flex; /* flexbos para el diseño de los elemento hijos */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    div {
+        background: #767775; /*color de fondo de cada div*/
+        flex-basis: 100%; /*ocupa un espacio dentro del contenedor */
+        height: 100px; /* altura fija de pixeles para cada div
+        margin-bottom: 0.5rem; /*margen inferior para separar los elementos verticales*/
+}
+
+
+
+/*ancho minimo de 600px para pantallas*/
+@media (min-width: 600px) {  
+    main {
+        flex-wrap: nowrap; /* desactivar el ajuste de linea, manteniendo todos los div */
+    }
+    div {
+        flex-basis: 33%; /* cada div ocupara aproximadamente un tercio del ancho del contenedor*/
+    }
+}
+</style>
+
+<main>
+    <div></div>
+    <div></div>
+    <div></div>
+</main>
